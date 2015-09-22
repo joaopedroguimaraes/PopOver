@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/default_spacing_large">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/default_spacing_large">
+        <TextView
+            android:id="@+id/txt_entidade_nome"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/default_spacing_medium"
+            android:textSize="@dimen/default_textSize_veryLarge"
+            android:textColor="@color/primary_text"
+            android:text="@string/entity_profile_nome"
+            android:layout_alignParentLeft="true"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/default_spacing_medium"
+        android:background="@color/default_background_third"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/default_textSize_large"
+        android:text="@string/entity_profile_quemsomos" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_spacing_small"
+        android:layout_marginBottom="@dimen/default_spacing_medium">
+        <EditText
+            android:id="@+id/edit_quem_somos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:hint="@string/entity_edit_quem_somos_hint"
+            android:minLines="2"
+            android:maxLines="5"
+            android:singleLine="false"
+            android:textIsSelectable="false"
+            android:textColor="@color/secondary_text" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/default_textSize_large"
+        android:text="@string/entity_profile_area_atuacao"
+        android:id="@+id/textView" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_spacing_small"
+        android:layout_marginBottom="@dimen/default_spacing_medium">
+        <EditText
+            android:id="@+id/edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:hint="@string/entity_edit_quem_somos_hint"
+            android:minLines="2"
+            android:maxLines="5"
+            android:singleLine="false"
+            android:textIsSelectable="false"
+            android:textColor="@color/secondary_text" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_entity_edit_events"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_spacing_large"
+        android:layout_marginLeft="@dimen/default_spacing_large"
+        android:gravity="left"
+        android:text="@string/entity_edit_events"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:padding="@dimen/default_spacing_veryLarge">
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_entity_edit_cancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="@string/entity_edit_cancelar"/>
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_entity_edit_salvar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_alignLeft="@id/btn_entity_edit_cancelar"
+            android:layout_alignTop="@id/btn_entity_edit_cancelar"
+            android:layout_alignParentRight="true"
+            android:text="@string/entity_edit_salvar"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

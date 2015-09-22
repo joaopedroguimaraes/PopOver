@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">PopOver</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Menu -->
+    <!-- .....Usuário..... -->
+    <string name="menu_user_profile">Meu perfil</string>
+    <string name="menu_user_events">Eventos</string>
+    <string name="menu_user_search">Busca</string>
+    <string name="menu_user_rating">Minhas avaliações</string>
+    <string name="menu_user_settings">Configurações</string>
+    <string name="menu_user_feed">Feed de notícias</string>
+    <!-- .....Entidade.... -->
+    <string name="menu_entity_profile">Meu perfil</string>
+    <string name="menu_entity_events">Eventos</string>
+    <string name="menu_entity_rating">Avaliações</string>
+    <string name="menu_entity_settings">Configurações</string>
+
+    <!-- Base Navigation -->
+    <string name="base_navigation_drawer_open">Open</string>
+    <string name="base_navigation_drawer_close">Close</string>
+
+    <!-- Tela de login -->
+    <string name="email">Email</string>
+    <string name="password">Senha</string>
+    <string name="login">Login</string>
+    <string name="notMember">Ainda não possui uma conta?\nCadastre-se aqui</string>
+
+    <!-- Tela de sign up -->
+    <string name="name">Nome</string>
+    <string name="createAccount">Criar Conta</string>
+    <string name="alreadyMember">Já é usuário? Faça o login</string>
+
+    <!-- Tela de perfil da entidade (visualização) -->
+    <string name="entity_profile_nome">[Nome da Entidade]</string>
+    <string name="entity_profile_quemsomos">Quem somos?</string>
+    <string name="entity_profile_quemsomos_descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </string>
+    <string name="entity_profile_seguir">Seguir</string>
+    <string name="entity_profile_editar">Editar</string>
+    <string name="entity_profile_area_atuacao">Área de atuação: </string>
+    <string name="entity_profile_area_atuacao_descricao">Eletricidade e energia</string>
+    <string name="entity_profile_popularidade">Popularidade: </string>
+    <string name="entity_profile_popularidade_seguidores">XXXX seguidores</string>
+    <string name="entity_profile_eventos">Nossos eventos: </string>
+
+    <!-- Tela de perfil da entidade (edição) -->
+    <string name="entity_edit_quem_somos_hint">Breve descrição da entidade.</string>
+    <string name="entity_edit_salvar">Salvar</string>
+    <string name="entity_edit_cancelar">Cancelar</string>
+    <string name="entity_edit_events">Editar Eventos</string>
+
+    <!-- Tela de um evento (exibição) -->
+    <string name="event_info_nome">[Nome do Evento]</string>
+    <string name="event_info_join">Join</string>
+    <string name="event_info_categoria">Categoria: </string>
+    <string name="event_info_categoria_quais">Festival</string>
+    <string name="event_info_descricao">Descrição: </string>
+    <string name="event_info_descricao_texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </string>
+    <string name="event_info_local">Local: </string>
+    <string name="event_info_data">Data: </string>
+    <string name="event_info_horario">Horário: </string>
+    <string name="event_info_avaliacao">Avaliação</string>
+    <string name="event_info_avalie">Avalie o evento aqui!</string>
+
+    <!-- Tela de um evento (edição) -->
+</resources>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/default_spacing_large"
+    android:background="@color/primary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txt_evento_nome"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/default_spacing_medium"
+            android:layout_marginBottom="@dimen/default_spacing_medium"
+            android:textSize="@dimen/default_textSize_veryLarge"
+            android:textColor="@color/white"
+            android:text="@string/event_info_nome"
+            android:layout_alignParentLeft="true"/>
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_event_join"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_spacing_medium"
+            android:layout_marginBottom="@dimen/default_spacing_medium"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:text="@string/event_info_join"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_spacing_small"
+        android:layout_marginBottom="@dimen/default_spacing_medium"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_spacing_large"
+            android:orientation="vertical">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/default_textSize_large"
+                android:text="@string/event_info_descricao" />
+
+            <TextView
+                android:id="@+id/txt_evento_descricao"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/default_spacing_medium"
+                android:textSize="@dimen/default_textSize_medium"
+                android:text="@string/event_info_descricao_texto" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_spacing_small"
+        android:layout_marginBottom="@dimen/default_spacing_medium"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_spacing_large"
+            android:orientation="vertical">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/default_textSize_large"
+                android:text="@string/event_info_categoria" />
+            <TextView
+                android:id="@+id/txt_evento_categorias"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/default_spacing_medium"
+                android:textSize="@dimen/default_textSize_medium"
+                android:text="@string/event_info_categoria_quais" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_spacing_small"
+        android:layout_marginBottom="@dimen/default_spacing_medium"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_spacing_large"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt_evento_local"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/default_textSize_medium"
+                android:text="@string/event_info_local" />
+            <TextView
+                android:id="@+id/txt_evento_data"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/default_spacing_medium"
+                android:textSize="@dimen/default_textSize_medium"
+                android:text="@string/event_info_data" />
+            <TextView
+                android:id="@+id/txt_evento_horario"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/default_spacing_medium"
+                android:textSize="@dimen/default_textSize_medium"
+                android:text="@string/event_info_horario" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_spacing_small"
+        android:layout_marginBottom="@dimen/default_spacing_medium"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_spacing_large"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt_evento_avaliacao"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/default_textSize_medium"
+                android:text="@string/event_info_avaliacao" />
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_spacing_medium"
+                android:id="@+id/ratingBar"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/txt_evento_avalie_aqui"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/default_textSize_medium"
+                android:text="@string/event_info_avalie" />
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+</LinearLayout>
